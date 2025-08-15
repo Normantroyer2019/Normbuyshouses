@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norm Buys Houses - We Buy Houses Fast for Cash</title>
+    <meta name="description" content="Sell your house fast for cash in Texas. No repairs needed, no fees, quick closing. Get your cash offer in 24 hours.">
+    <meta name="keywords" content="sell house fast, cash offer, we buy houses, sell house as is, quick closing">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Norm Buys Houses - We Buy Houses Fast for Cash">
+    <meta property="og:description" content="Get a cash offer for your house in 24 hours. No repairs, no fees, no waiting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://normbuyshouses.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f8ff" width="1200" height="600"/><path fill="%23e6f3ff" d="M0 400l50-16.7C100 367 200 333 300 316.7 400 300 500 300 600 316.7 700 333 800 367 900 383.3 1000 400 1100 400 1150 400l50 0V600H0V400z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-section {
+            background: white;
+            padding: 80px 0;
+            margin: -50px 0 0 0;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        .form-container {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #e9ecef;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #2c5aa0;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .benefits {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .benefit-card h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .phone-highlight {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-container {
+                margin: 20px;
+                padding: 30px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .urgency {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="urgency">
+        ⚡ CASH OFFERS IN 24 HOURS - NO REPAIRS NEEDED ⚡
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">🏠 Norm Buys Houses</a>
+            <a href="tel:7247628041" class="cta-button">Call Now: (724) 762-8041</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Sell Your House Fast for Cash</h1>
+            <p>No Repairs • No Fees • No Waiting • Guaranteed Closing</p>
+            <a href="#contact-form" class="cta-button">Get My Cash Offer</a>
+            <div style="margin-top: 20px; font-size: 1.2rem;">
+                <a href="tel:7247628041" style="color: #ffd700; text-decoration: none; font-weight: bold;">
+                    📞 Call Now: (724) 762-8041
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Get Your Cash Offer Today</h2>
+                <form id="leadForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address *</label>
+                        <input type="text" id="address" name="address" placeholder="Street Address, City, State, ZIP" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">Select Type</option>
+                                <option value="single-family">Single Family Home</option>
+                                <option value="condo">Condominium</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="multi-family">Multi-Family</option>
+                                <option value="mobile-home">Mobile Home</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">When do you need to sell?</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="30-days">Within 30 days</option>
+                                <option value="90-days">Within 90 days</option>
+                                <option value="flexible">I'm flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="situation">What's your situation? (Optional)</label>
+                        <textarea id="situation" name="situation" placeholder="Tell us about your situation - facing foreclosure, inherited property, need to relocate, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Get My Cash Offer Now</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9em; color: #666;">
+                        * No obligation. We respect your privacy.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 style="text-align: center; color: #2c5aa0; font-size: 2.5rem; margin-bottom: 20px;">Why Choose Norm Buys Houses?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Cash Offers</h3>
+                    <p>Get a competitive cash offer within 24 hours. No financing contingencies or delays.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>No Repairs Needed</h3>
+                    <p>Sell your house as-is. We buy properties in any condition - no repairs or cleaning required.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast Closing</h3>
+                    <p>Close in as little as 7 days. We work around your timeline and schedule.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚫</div>
+                    <h3>No Fees or Commissions</h3>
+                    <p>Zero fees, zero commissions. No real estate agent fees or closing costs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Local & Trusted</h3>
+                    <p>Family-owned business serving our community for over 10 years with hundreds of satisfied customers.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Simple Process</h3>
+                    <p>No showings, no open houses, no hassle. Just a simple, straightforward sale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">"Norm bought our house in 10 days when we needed to relocate for work. The process was incredibly smooth and professional."</div>
+                    <div class="testimonial-author">- Sarah M., Dallas</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">"After my father passed, I inherited his house. Norm made the sale stress-free during a difficult time. Highly recommend!"</div>
+                    <div class="testimonial-author">- Michael R., Houston</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">"We were facing foreclosure and Norm helped us out of a tough situation. Fair price, fast closing. Thank you!"</div>
+                    <div class="testimonial-author">- Jennifer L., Austin</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="phone-highlight">Call Now: (724) 762-8041</div>
+            <p>&copy; 2025 Norm Buys Houses. Licensed Real Estate Investor.</p>
+            <p>We buy houses in Pennsylvania and surrounding areas.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script>
+        // Initialize EmailJS (you'll need to replace with your actual keys)
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+        })();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission with email integration
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Prepare template parameters for email
+            const templateParams = {
+                from_name: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                property_address: document.getElementById('address').value,
+                property_type: document.getElementById('propertyType').value || 'Not specified',
+                timeline: document.getElementById('timeline').value || 'Not specified',
+                situation: document.getElementById('situation').value || 'Not provided',
+                to_email: 'troyern36@gmail.com'
+            };
+            
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams) // Replace with your IDs
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
+                    submitBtn.textContent = 'Sent Successfully!';
+                    submitBtn.style.background = '#28a745';
+                    
+                    // Reset form
+                    document.getElementById('leadForm').reset();
+                    
+                    // Show alert
+                    alert('Thank you! We\'ve received your information and will contact you within 24 hours with a cash offer.');
+                    
+                    // Reset button after delay
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                    }, 3000);
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Show error message
+                    submitBtn.textContent = 'Send Failed - Try Again';
+                    submitBtn.style.background = '#dc3545';
+                    
+                    // Reset button after delay
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                    }, 3000);
+                    
+                    alert('Sorry, there was an error sending your information. Please try calling us directly at (724) 762-8041.');
+                });
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 6) {
+                value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+            } else if (value.length >= 3) {
+                value = value.replace(/(\d{3})(\d{0,3})/, '($1) $2');
+            }
+            e.target.value = value;
+        });
+
+        // Add floating animation to benefit cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.benefit-card, .testimonial').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
